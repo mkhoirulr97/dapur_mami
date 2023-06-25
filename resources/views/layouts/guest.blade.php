@@ -8,6 +8,10 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <!-- Favicons -->
+    <link rel="icon" sizes="180x180" type="image/x-icon" href="{{ asset('assets/images/logo.png') }}">
+
+
     <!-- Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap"

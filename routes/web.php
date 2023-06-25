@@ -51,7 +51,9 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['auth']], function () {
     Route::resource('delivery-order', DeliveryOrderController::class, ['as' => 'admin']);
 
     // User Setting
-    Route::resource('user-setting', UserSettingController::class, ['as' => 'admin']);
+    Route::post('user-setting/password/update', [SettingController::class, 'passwordUpdate'])->name('user.setting.password.update');
+    Route::post('user-setting/password/check', [SettingController::class, 'passwordCheck'])->name('user.setting.password.check');
+    Route::resource('user-setting', UserSettingController::class, ['as' => 'user']);
 
     // Dashboard
     Route::middleware(['admin.access'])->group(function () {

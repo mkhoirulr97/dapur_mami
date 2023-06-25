@@ -153,4 +153,9 @@ class InvoiceRepository implements InvoiceInterface
         ])
         ->get();
     }
+
+    public function getTotalSales()
+    {
+        return $this->transaction->where('status', Transaction::SUCCESS_STATUS)->sum('total_payment');
+    }
 }

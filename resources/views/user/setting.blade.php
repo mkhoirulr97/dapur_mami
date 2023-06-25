@@ -25,7 +25,7 @@
                         <h3 class="font-bold text-lg">
                             Formulir Ubah Sandi
                         </h3>
-                        <form action="{{ route('admin.setting.password.update') }}" method="POST">
+                        <form action="{{ route('user.setting.password.update') }}" method="POST">
                             <p class="py-4">
                                 @csrf
                                 <x-input id="current_password" label="Sandi Saat Ini" name="current_password"
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="">
-                <form action="{{ route('admin.setting.update', $user->id) }}" method="POST"
+                <form action="{{ route('user.user-setting.update', $user->id) }}" method="POST"
                     enctype="multipart/form-data">
                     @method('PUT')
                     @csrf
@@ -137,7 +137,7 @@
                         let val = $('#current_password').val();
                         if (val != null) {
                             $.ajax({
-                                url: '{{ route('admin.setting.password.check') }}',
+                                url: '{{ route('user.setting.password.check') }}',
                                 method: 'POST',
                                 data: {
                                     _token: '{{ csrf_token() }}',

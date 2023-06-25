@@ -184,6 +184,7 @@ class InvoiceController extends Controller
                 '11' => 'November',
                 '12' => 'Desember',
             ],
+            'totalSales' => $this->invoice->getTotalSales(),
         ]);
     }
 

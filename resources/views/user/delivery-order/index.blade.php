@@ -79,7 +79,7 @@
             <section class="w-full flex items-center">
                 <div class="max-w-screen-xl px-4 mx-auto w-full">
                     <div class="flex flex-col items-center justify-center py-10">
-                        <img src="{{ asset('img/empty.svg') }}" alt="empty" class="w-1/2">
+                        <img src="{{ asset('images/order/empty.png') }}" alt="empty" class="w-1/2">
                         <h3 class="text-2xl font-bold dark:text-white">
                             Belum ada transaksi
                         </h3>

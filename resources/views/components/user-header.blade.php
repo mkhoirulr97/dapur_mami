@@ -51,7 +51,7 @@
                                  </a>
                              </li>
                              <li>
-                                 <a href="{{ route('admin.user-setting.index') }}"
+                                 <a href="{{ route('user.user-setting.index') }}"
                                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                      Pengaturan
                                  </a>

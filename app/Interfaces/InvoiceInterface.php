@@ -12,4 +12,5 @@ interface InvoiceInterface {
     public function getAll();
     public function filterByMonth($month);
     public function filterByDateRange($start, $end);
+    public function getTotalSales();
 }

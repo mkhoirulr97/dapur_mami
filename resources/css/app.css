@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-FROM nginx
-COPY index.html /usr/share/nginx/html
-
 .select2-container {
     /* The container where the selectbox is housing*/
     @apply relative box-border align-middle inline-block m-0 mb-2;
